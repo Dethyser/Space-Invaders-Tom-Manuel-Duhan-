@@ -14,7 +14,11 @@ public class ShotController : MonoBehaviour {
         rb.velocity = Vector2.up * movementSpeed;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
+    private void OnMouseDown() {
+        Debug.Log("Hi");
+    }
+    private void OnCollisionEnter2D(Collision2D collision) {
 
+        Destroy(gameObject);
     }
 }

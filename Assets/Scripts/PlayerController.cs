@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void SpawnShot() {
-
+        //Spawn Shot at Playerposition
         Instantiate(shotPrefab, transform);
     }
 }
