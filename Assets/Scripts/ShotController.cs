@@ -2,7 +2,7 @@
 
 public class ShotController : MonoBehaviour {
 
-    public float movementSpeed = 5f;
+    public float movementSpeed = 5f;                            //the speed at which the shot moves
 
     private Rigidbody2D rb;
     private void Awake() {
@@ -11,11 +11,11 @@ public class ShotController : MonoBehaviour {
 
     private void FixedUpdate() {
 
-        rb.velocity = Vector2.up * movementSpeed;
+        rb.velocity = Vector2.up * movementSpeed;               //moves the shot upwards
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnCollisionEnter2D(Collision2D collision) {    //checks for collision
 
-        Destroy(gameObject);
+        Destroy(gameObject);                                    //destroys itself
     }
 }
